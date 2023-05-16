@@ -242,7 +242,7 @@ hippo-repo-host-0                 2/2     Running     0          2m40s
 ## Logs
 Logs are directed to stdout, stderr and are written to the configured log path.  Here is a sample log with default log level info:
 ```
-catcat bash-4.4$ cat /pgdata/self_test.log
+bash-4.4$ cat /pgdata/self_test.log
 2023-05-15 15:39:51,401 - self_test -           INFO - ******* STARTING NEW TEST RUN *******
 2023-05-15 15:40:06,458 - self_test -           INFO - PostgreSQL database version:
 2023-05-15 15:40:06,459 - self_test -           INFO - ('PostgreSQL 13.8 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-10), 64-bit',)
@@ -254,9 +254,9 @@ catcat bash-4.4$ cat /pgdata/self_test.log
 2023-05-15 15:40:06,686 - self_test -           INFO - *** DBConnectionType.PRIMARY_SERVICE Validation Succeeded! ***
 2023-05-15 15:40:16,735 - self_test -           INFO - Validating DBConnectionType.REPLICA_SERVICE Data: Expecting 1000 Rows
 2023-05-15 15:40:16,737 - self_test -           INFO - *** DBConnectionType.REPLICA_SERVICE Validation Succeeded! ***
-2023-05-15 15:40:16,746 - self_test -           INFO - Validating DBConnectionType.REPLICA_POD Data for podhippo-pgha1-mjw7-0: Expecting 1000 Rows
+2023-05-15 15:40:16,746 - self_test -           INFO - Validating DBConnectionType.REPLICA_POD Data for pod hippo-pgha1-mjw7-0: Expecting 1000 Rows
 2023-05-15 15:40:16,748 - self_test -           INFO - *** DBConnectionType.REPLICA_POD Validation Succeeded for pod hippo-pgha1-mjw7-0! ***
-2023-05-15 15:40:16,761 - self_test -           INFO - Validating DBConnectionType.REPLICA_POD Data for podhippo-pgha1-xvz6-0: Expecting 1000 Rows
+2023-05-15 15:40:16,761 - self_test -           INFO - Validating DBConnectionType.REPLICA_POD Data for pod hippo-pgha1-xvz6-0: Expecting 1000 Rows
 2023-05-15 15:40:16,763 - self_test -           INFO - *** DBConnectionType.REPLICA_POD Validation Succeeded for pod hippo-pgha1-xvz6-0! ***
 2023-05-15 15:40:17,298 - self_test -           INFO - Successfully synched the hippo-postgres-qa ArgoCD application.
 2023-05-15 15:40:17,298 - self_test -           INFO - ******* SUCCESS: ALL TESTS PASSED *******

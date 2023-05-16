@@ -178,7 +178,7 @@ def validate_data(db_cur, DBConnectionType, pod=None):
 
         # validate data
         if pod is not None:
-            msg = 'Validating {type} Data for pod{pod_name}: Expecting 1000 '\
+            msg = 'Validating {type} Data for pod {pod_name}: Expecting 1000 '\
                 'Rows'.format(type=DBConnectionType,
                               pod_name=pod.metadata.name)
         else:
