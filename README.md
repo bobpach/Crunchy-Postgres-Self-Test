@@ -226,7 +226,7 @@ kubectl apply -n <your dev namespace> -f <your configmap>.yaml
 kubectl apply -n <your dev namespace> -k <your postres.yaml file>
 ```
 
-6. View the postgres cluster pods.  If you have 6 containers in the postgres pods you have a successful deployment.
+6. View the postgres cluster pods.  The number of containers in the postgres pods will vary depending on the manifest.
 ```
 kubectl get po -n <your dev namespace>
 NAME                              READY   STATUS      RESTARTS   AGE
